@@ -178,6 +178,23 @@
     border-top:1px dashed var(--line-light);padding-top:12px;
   }
 
+  .proj-card .repo-link{display:inline-block;margin-top:12px;font-family:'IBM Plex Mono';font-size:12px;color:var(--amber);}
+  .proj-card .repo-link:hover{text-decoration:underline;}
+  .dash-head{margin:56px 0 8px;font-size:22px;}
+  .dash-lede{font-size:14px;color:#565b60;max-width:760px;margin-bottom:24px;}
+  .dash-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  @media(max-width:760px){.dash-grid{grid-template-columns:1fr;}}
+  .dash-card{background:var(--paper);border:1px solid var(--line-light);border-radius:2px;overflow:hidden;display:flex;flex-direction:column;}
+  .dash-card a.shot{display:block;background:#1E2533;}
+  .dash-card img{width:100%;height:220px;object-fit:cover;object-position:top;display:block;}
+  .dash-card .dash-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;}
+  .dash-card .badge{font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.04em;align-self:flex-start;padding:3px 8px;border-radius:2px;}
+  .dash-card .badge.orig{background:rgba(76,122,108,.14);color:var(--teal);}
+  .dash-card .badge.recr{background:rgba(201,124,61,.14);color:var(--amber);}
+  .dash-card h4{font-size:15.5px;line-height:1.3;}
+  .dash-card p{font-size:13px;color:#565b60;}
+  .dash-card .repo-link{font-family:'IBM Plex Mono';font-size:12px;color:var(--amber);margin-top:4px;}
+
   /* ---------- CERTIFICATIONS ---------- */
   .cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
   @media(max-width:800px){.cert-grid{grid-template-columns:1fr 1fr;}}
@@ -562,6 +579,7 @@
         <h3>Solar Energy Optimization &amp; Procurement Savings Dashboard</h3>
         <p>Led a cross-functional project with Adani Green &amp; Waaree to commission a 0.498 MWp rooftop solar system, with a Python forecasting model and Power BI dashboard to monitor generation.</p>
         <div class="outcome mono">→ Lower monthly external grid procurement</div>
+        <a class="repo-link" href="https://github.com/inderlohani/solar-energy-forecast-dashboard" target="_blank" rel="noopener">View dashboard &amp; code on GitHub →</a>
       </div>
 
       <div class="proj-card reveal">
@@ -569,6 +587,7 @@
         <h3>Harvest Dryer Stock Flow Optimization</h3>
         <p>Managed layout and data-driven scheduling of material flow across 3 dryers, 6 bins, and pre-cleaners, with a Python simulation model for drying sequence and bin allocation.</p>
         <div class="outcome mono">→ 20% improvement in drying efficiency</div>
+        <a class="repo-link" href="https://github.com/inderlohani/harvest-dryer-flow-optimization" target="_blank" rel="noopener">View dashboard &amp; code on GitHub →</a>
       </div>
 
       <div class="proj-card reveal">
@@ -576,6 +595,63 @@
         <h3>Safety &amp; Compliance Dashboard with Material Risk Insights</h3>
         <p>Spearheaded a dynamic Power BI dashboard for incident tracking and risk-prone stock zones, improving inventory zoning and segregation protocols.</p>
         <div class="outcome mono">→ 40% fewer material-related safety incidents</div>
+        <a class="repo-link" href="https://github.com/inderlohani/data-analytics-powerbi" target="_blank" rel="noopener">View safety, scrap &amp; ETP dashboards →</a>
+      </div>
+
+    </div>
+
+    <h3 class="dash-head reveal">Dashboard Samples</h3>
+    <p class="dash-lede reveal">Three dashboards I built while working at Adani Wilmar, Firozpur, shown with sensitive identifiers blurred, plus two recreations of my solar and dryer projects rebuilt on sample data, because the original plant data is internal.</p>
+    <div class="dash-grid">
+
+      <div class="dash-card reveal">
+        <a class="shot" href="https://github.com/inderlohani/data-analytics-powerbi" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/inderlohani/data-analytics-powerbi/main/01-scrap-dashboard_1.jpg" alt="Packaging-Material Scrap Report"></a>
+        <div class="dash-body">
+          <span class="badge orig">BUILT AT ADANI WILMAR</span>
+          <h4>Packaging-Material Scrap Report</h4>
+          <p>SAP data vs actual consumption per process order, top-loss SKUs, material-wise wastage and an RCA on strap losses. Built in Excel.</p>
+          <a class="repo-link" href="https://github.com/inderlohani/data-analytics-powerbi" target="_blank" rel="noopener">Open on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="dash-card reveal">
+        <a class="shot" href="https://github.com/inderlohani/data-analytics-powerbi" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/inderlohani/data-analytics-powerbi/main/02-etp-dashboard_1.jpg" alt="Monthly ETP Report"></a>
+        <div class="dash-body">
+          <span class="badge orig">BUILT AT ADANI WILMAR</span>
+          <h4>Monthly ETP Report</h4>
+          <p>COD, MLSS, DO, power, pH and TDS tracking with next-month action plan. Built in Power BI. Contributed to 12% better water recovery.</p>
+          <a class="repo-link" href="https://github.com/inderlohani/data-analytics-powerbi" target="_blank" rel="noopener">Open on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="dash-card reveal">
+        <a class="shot" href="https://github.com/inderlohani/data-analytics-powerbi" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/inderlohani/data-analytics-powerbi/main/03-safety-dashboard_1.jpg" alt="Safety Data: Production Team"></a>
+        <div class="dash-body">
+          <span class="badge orig">BUILT AT ADANI WILMAR</span>
+          <h4>Safety Data: Production Team</h4>
+          <p>TBT rate, hazards identified vs closed, team involvement and improvements done. Built in Excel.</p>
+          <a class="repo-link" href="https://github.com/inderlohani/data-analytics-powerbi" target="_blank" rel="noopener">Open on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="dash-card reveal">
+        <a class="shot" href="https://github.com/inderlohani/solar-energy-forecast-dashboard" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/inderlohani/solar-energy-forecast-dashboard/main/solar-dashboard.png" alt="Solar Generation &amp; Procurement"></a>
+        <div class="dash-body">
+          <span class="badge recr">RECREATED · SAMPLE DATA</span>
+          <h4>Solar Generation &amp; Procurement</h4>
+          <p>0.498 MWp rooftop system: daily generation vs Python forecast and grid vs solar energy mix.</p>
+          <a class="repo-link" href="https://github.com/inderlohani/solar-energy-forecast-dashboard" target="_blank" rel="noopener">Open on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="dash-card reveal">
+        <a class="shot" href="https://github.com/inderlohani/harvest-dryer-flow-optimization" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/inderlohani/harvest-dryer-flow-optimization/main/dryer-dashboard.png" alt="Harvest Dryer Stock Flow"></a>
+        <div class="dash-body">
+          <span class="badge recr">RECREATED · SAMPLE DATA</span>
+          <h4>Harvest Dryer Stock Flow</h4>
+          <p>Python scheduling model for 3 dryers and 6 bins: dryer Gantt, bin fill and baseline vs optimized throughput.</p>
+          <a class="repo-link" href="https://github.com/inderlohani/harvest-dryer-flow-optimization" target="_blank" rel="noopener">Open on GitHub →</a>
+        </div>
       </div>
 
     </div>
